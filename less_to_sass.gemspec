@@ -28,13 +28,13 @@ LESS2SASS_GEMSPEC = Gem::Specification.new do |spec|
   spec.executables = %w(less2sass)
   spec.files = Dir['lib/**/*', 'bin/*'] + readmes
   spec.homepage = 'https://github.com/vecerek/less2sass/'
-  spec.has_rdoc = false
+  #spec.has_rdoc = false
   spec.test_files = Dir['spec/lib/**/*_spec.rb']
   spec.license = 'MIT'
 
-  spec.add_dependency 'sass', '~> 3.4'
+  spec.add_dependency 'sass', '~> 3.4.0'
 
   spec.add_development_dependency 'rake', '~> 11.1'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'css_compare', '~> 0.2'
+  spec.add_development_dependency 'css_compare', '~> 0.2.0'
 end
